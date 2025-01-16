@@ -14,6 +14,20 @@
             color: #333;
             background-color: #f5f5f5;
         }
+        nav {
+            background-color: #2c3e50;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         h1 {
             color: #2c3e50;
             border-bottom: 2px solid #eee;
@@ -29,14 +43,53 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        .feature-list li {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#updates">Updates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <h1>Welcome to My Test Page</h1>
     <p>This is a simple test page for our repository.</p>
-    <section>
+
+    <section id="about">
         <h2>About</h2>
         <p>This page will be used to demonstrate Git workflow.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li>Responsive design for all devices</li>
+            <li>Clean and modern layout</li>
+            <li>Easy navigation with smooth scrolling</li>
+            <li>Optimized performance</li>
+        </ul>
+    </section>
+
+    <section id="updates">
+        <h2>Project Updates</h2>
+        <p>Stay tuned for regular updates on our project progress!</p>
+        <ul>
+            <li>Initial repository setup - Complete</li>
+            <li>Basic styling - Complete</li>
+            <li>Content expansion - In Progress</li>
+            <li>Navigation implementation - Complete</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Have questions or suggestions? Reach out to us:</p>
+        <p>Email: contact@example.com</p>
+        <p>Follow us on social media for the latest updates!</p>
     </section>
 </body>
 </html>
